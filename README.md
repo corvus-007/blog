@@ -1,4 +1,4 @@
-# apsee-media
+# blog
 Структура:
 ```
 app/
@@ -34,8 +34,8 @@ other/
 ## Установка
 1. Перейти в родительскую папку проектов
 2. Запустить консоль Git Bash
-3. Ввести команду `git clone https://github.com/corvus-007/apsee-media`,
-4. Перейти в каталог проекта `cd apsee-media`
+3. Ввести команду `git clone https://github.com/corvus-007/blog`,
+4. Перейти в каталог проекта `cd blog`
 5. Установить модули из package.json — `npm install`
 
 ## Запуск проекта
