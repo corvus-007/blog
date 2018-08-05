@@ -1,0 +1,12 @@
+label.error {
+  color: $danger-color;
+  font-size: rem(12);
+}
+
+.form-actions {
+  display: flex;
+
+  &--justify-right {
+    justify-content: flex-end;
+  }
+}

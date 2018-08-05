@@ -1,0 +1,50 @@
+.radiobox {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: rem(16);
+  user-select: none;
+  cursor: pointer;
+
+  label.error {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.radiobox__input {
+  @include visuallyhidden();
+}
+
+.radiobox__indicator {
+  padding-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: center;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: $duration * 1.5;
+  }
+
+  .radiobox__input:hover ~ &,
+  .radiobox__input:focus ~ & {
+    &::before {
+      border-color: $accent-color;
+    }
+  }
+
+  .radiobox__input:checked ~ & {
+    &::before {
+      background-image: url("images/radiobox.svg");
+      border-color: $accent-color;
+    }
+  }
+}

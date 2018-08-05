@@ -1,0 +1,41 @@
+.user-list {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+}
+
+.user-list__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-list__button {
+  padding: 10px;
+  font-size: 0;
+  background: none;
+  color: #ffffff;
+  border: 1px solid rgba(#ffffff, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.8;
+  transition: $duration;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.user-list__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}

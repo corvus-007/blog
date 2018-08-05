@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Page – APSEE MEDIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  @@include('blocks/main-header.html')
+  @@include('blocks/main-nav.html')
+
+  <div class="main-layout">
+    <div class="main-layout__row">
+      <ul class="main-layout__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Politics and geopolitics</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-layout__row">
+      <main class="main-layout__main main-content">
+        <article class="main-content__section forum common-block">
+          <div class="common-block-header">
+            <h1 class="common-block-title">Page</h1>
+          </div>
+          <div class="common-block-body">
+            <form action="">
+              <div class="field">
+                <label class="field__label" for="filed-1">Field</label>
+                <div class="field__control">
+                  <input type="text" class="field__input input" id="filed-1" name="field1">
+                </div>
+              </div>
+              <div class="field field--required">
+                <label class="field__label" for="filed-2">Required field</label>
+                <div class="field__control">
+                  <input type="text" class="field__input input" id="filed-2" name="field2" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="filed-4">Select</label>
+                <div class="field__control">
+                  <select class="select" name="field4" id="filed-4">
+                    <option value="val1">item1</option>
+                    <option value="val2">item2</option>
+                    <option value="val3">item3</option>
+                    <option value="val4">item4</option>
+                    <option value="val5">item5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="filed-3">Textarea</label>
+                <div class="field__control">
+                  <textarea class="field__input input inpit--multiline" id="field-3" name="field3" rows="4"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="field__control">
+                  <label class="field__checkbox checkbox">
+                    <input class="checkbox__input" type="checkbox" name="check1">
+                    <span class="checkbox__indicator">checkbox</span>
+                  </label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__control">
+                  <label class="field__radiobox radiobox">
+                    <input class="radiobox__input" type="radio" name="radio1">
+                    <span class="radiobox__indicator">radiobox</span>
+                  </label>
+                </div>
+              </div>
+
+              <h2>Stack <small>default</small></h2>
+              <div class="fields-group">
+                <div class="fields-group__item field">
+                  <div class="field__control">
+                    <label class="field__radiobox radiobox">
+                      <input class="radiobox__input" type="radio" name="radio" value="1">
+                      <span class="radiobox__indicator">radiobox1</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="fields-group__item field">
+                  <div class="field__control">
+                    <label class="field__radiobox radiobox">
+                      <input class="radiobox__input" type="radio" name="radio" value="2">
+                      <span class="radiobox__indicator">radiobox2</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Inline <small><code>fields-group--inline</code></small></h2>
+
+              <div class="fields-group fields-group--inline">
+                <div class="fields-group__item field">
+                  <div class="field__control">
+                    <label class="field__radiobox radiobox">
+                      <input class="radiobox__input" type="radio" name="radio-inline" value="1">
+                      <span class="radiobox__indicator">radiobox1</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="fields-group__item field">
+                  <div class="field__control">
+                    <label class="field__radiobox radiobox">
+                      <input class="radiobox__input" type="radio" name="radio-inline" value="2">
+                      <span class="radiobox__indicator">radiobox2</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions form-actions--justify-right">
+                <button class="button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </main>
+
+    </div>
+  </div>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

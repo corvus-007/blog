@@ -1,0 +1,20 @@
+.main-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #172532;
+}
+
+.main-footer__inner {
+  @include make-container();
+}
+
+// .main-footer__nav {
+//   margin-bottom: 15px;
+// }
+
+// .main-footer__socials {
+
+//   @include mq-max(767px) {
+//     justify-content: center;
+//   }
+// }

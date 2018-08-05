@@ -1,0 +1,41 @@
+.footer-nav {
+}
+
+.footer-nav__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include mq-max(767px) {
+    justify-content: center;
+  }
+}
+
+.footer-nav__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-nav__link {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+}

@@ -1,0 +1,31 @@
+.popup {
+  width: calc(100% - #{($gutter / 2)});
+  max-width: 460px;
+  padding: $gutter;
+  border-radius: $border-radius;
+  cursor: default !important;
+
+  &--notice {
+    max-width: 420px;
+    text-align: center;
+  }
+
+  @include mq-min(768px) {
+    padding: 50px;
+
+    &--notice {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-size: rem(22);
+}

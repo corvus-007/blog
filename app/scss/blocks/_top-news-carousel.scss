@@ -1,0 +1,19 @@
+.top-news-carousel {
+  .flickity-page-dots {
+    left: 20px;
+    bottom: 20px;
+    width: auto;
+
+    .dot {
+      background: #ffffff;
+    }
+  }
+}
+
+.top-news-carousel__item {
+  width: 100%;
+
+  // @include mq-min(992px) {
+  //   height: 100%;
+  // }
+}
